@@ -3,7 +3,9 @@ package hw;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		/*
+		 * liang dev change
+		 */
 		System.out.println("Hello World Tom");
 	}
 
