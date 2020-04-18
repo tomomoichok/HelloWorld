@@ -1,7 +1,7 @@
-package hw;
+package lesson2;
 
-public class Cat extends Animal {
-    public Cat(String myName) {
+public class ECat extends EAnimal {
+    public ECat(String myName) {
         super(myName);
     }
     public void catchmouse() {

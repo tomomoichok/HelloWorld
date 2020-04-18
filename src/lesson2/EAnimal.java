@@ -1,8 +1,8 @@
-package hw;
+package lesson2;
 
-public class Animal {
+public class EAnimal {
 	public String name;
-    public Animal(String myName) {
+    public EAnimal(String myName) {
         name = myName;
     }
     public void eat(){

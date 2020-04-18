@@ -1,7 +1,7 @@
-package hw;
+package lesson2;
 
-public class Dog extends Animal {
-    public Dog(String myName) {
+public class EDog extends EAnimal {
+    public EDog(String myName) {
         super(myName);
     }
 

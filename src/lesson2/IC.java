@@ -1,6 +1,6 @@
-package hw;
+package lesson2;
 
-public class C implements A,B {
+public class IC implements IA,IB {
 	public void eat(){
         System.out.println("大口吃");
     }
