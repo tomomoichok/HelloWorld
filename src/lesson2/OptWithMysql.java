@@ -6,11 +6,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class OptWithMysql {
-//	public static void main(String[] args) {
-//		dowithmysql();
-//	}
-
-
+	public static void main(String[] args) {
+		dowithmysql();
+	}
 
 	public static void dowithmysql() {
 		String databasename = "test";
