@@ -39,6 +39,10 @@ public class MysqlConnect {
             stmt = conn.createStatement();
             //登入
 //            insert(stmt,"11","aa");
+//          insert(stmt,"22","bb");
+//          insert(stmt,"33","cc");
+//          insert(stmt,"44","dd");
+//          insert(stmt,"55","ee");
             //更新
 //            update(stmt,"11","bbb");
 
