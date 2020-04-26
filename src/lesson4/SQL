@@ -8,7 +8,6 @@ create table test1.`test_user` (
   PRIMARY KEY (`id`)
 )
 
-drop table `test_student`;
 create table test1.`test_student` (
   `id` varchar(100) NOT NULL,
   `curriculum` varchar(255) NOT NULL,
