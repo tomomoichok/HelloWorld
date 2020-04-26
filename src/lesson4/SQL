@@ -1,0 +1,37 @@
+create DATABASE test1;
+
+create table test1.`test_user` (
+  `id` varchar(100) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `age` int not null,
+  `hobby` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+drop table `test_student`;
+create table test1.`test_student` (
+  `id` varchar(100) NOT NULL,
+  `curriculum` varchar(255) NOT NULL,
+  `fraction` int not null,
+  PRIMARY KEY (`id`,`curriculum`)
+)
+
+delete from test1.`test_user`
+insert into test1.`test_user` values('1','大郎','23','勉強大好き');
+insert into test1.`test_user` values('2','次郎','22','サッカー大好き');
+insert into test1.`test_user` values('3','三郎','20','バスケットボール大好き');
+
+insert into test1.`test_student` values('1','数学','76');
+insert into test1.`test_student` values('1','理科','67');
+insert into test1.`test_student` values('2','数学','86');
+insert into test1.`test_student` values('2','理科','85');
+insert into test1.`test_student` values('3','数学','95');
+insert into test1.`test_student` values('3','理科','91');
+
+
+select u.name,avg(s.fraction)
+from test1.`test_user`  u
+inner join test1.`test_student` s
+on u.id = s.id
+group by u.name
+order by avg(s.fraction)  DESC
