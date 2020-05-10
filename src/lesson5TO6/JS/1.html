@@ -1,0 +1,60 @@
+<html>
+<head> <meta charset="utf-8"><title>文档标题</title></head>
+<body>
+<form>
+<div id="demo"></div>
+First name: <input type="text"  name="firstname" id="userName"><div id="msg"></div><br>Password: <input type="password" name="pwd"><br><input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female<br>
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br><input type="checkbox" name="vehicle" value="Car">I have a car<br>
+<input type="submit" value="Submit">
+<button type="button" onclick="f1()">page</button>
+<button type="button" onclick="f2()">text</button>
+<button type="button" onclick="f3()">image</button>
+<button type="button" onclick="f4()">css</button>
+<img border="0" src="images/0.jpg" alt="Pulpit rock" id="myimage" width="304" height="228">
+<button type="button" onclick="alert('welocome!')">click me!</button>
+<button type="button" onclick="f5()">console</button>
+<button type="button" onclick="f10()">校验</button>
+
+<script>
+function f1(){
+document.write("<h1>这是一个标题</h1>");
+document.write("<p>这是一个段落。</p>");
+}
+
+function f2(){
+ let x=document.getElementById("demo");  //查找元素
+ x.innerHTML="Hello JavaScript";    //改变内容
+}
+
+function f3(){　
+   let　element=document.getElementById('myimage');
+　　　element.src="images/1.jpg";
+}
+
+function f4() {
+ let x=document.getElementById("demo")  //找到元素 
+ x.style.color="#ff0000";           //改变样式
+}
+function f5() {
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+}
+function f10(){
+//用户名是否填写校验
+ let msg = document.getElementById('msg');
+ let inputName = document.getElementById('userName');
+ if(inputName.value == ""){
+   //alert('请入力用户名');
+   msg.innerHTML="请入力用户名";
+ } else {
+   msg.innerHTML="";
+ }
+}
+</script>
+
+</from>
+</body>
+</html>

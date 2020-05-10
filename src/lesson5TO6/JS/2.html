@@ -1,0 +1,84 @@
+<html>
+<head> <meta charset="utf-8"><title>文档标题</title></head>
+<body>
+<form>
+<button type="button" onclick="f1()">array</button>
+<button type="button" onclick="f2()">object</button>
+<button type="button" onclick="f3()">var</button>
+<button type="button" onclick="f4()">for</button>
+<button type="button" onclick="f5()">try</button>
+<input type="text"  name="ttt" id="tt" >
+<div id="message"></div>
+<script>
+//onmouseover="alert('onmouseover');" onmouseout="alert('onmouseout');" onchange="alert('onchange');"  onkeydown="alert('onkeydown');" 
+var test = "AAAAAAAAAA";
+function f1(){
+	var mycars = new Array();
+	mycars[0] = "Saab";
+	mycars[1] = "Volvo";
+	mycars[2] = "BMW";
+	//
+	for(i=0;i<mycars.length;i++) {
+	    console.log(mycars[i]);
+	}
+}
+
+function f2() {
+	var person = {
+		firstName:"John",
+		lastName:"Doe",
+		age:50,
+		eyeColor:"blue"
+	};
+	console.log(person);
+	console.log('-------------------');
+	console.log(person.age);
+	
+}
+
+function f3() {
+	//console.log(person);
+	console.log(test);
+}
+function f4(){
+	var mycars = new Array();
+	mycars[0] = "1111";
+	mycars[1] = "222";
+	mycars[2] = "3333"
+	mycars[3] = "4444"
+	mycars[4] = "55555"
+	mycars[5] = "66666"
+	for(j=0;j<2;j++){
+		for(i=0;i<mycars.length;i++) {
+			if (i == 1 ) {
+				break;
+			}
+			//if (i == 1 ) {
+			//	continue;
+			//}
+			console.log(mycars[i]);
+		}
+	}
+	console.log("END");
+}
+
+function f5(){
+    var x = document.getElementById("tt").value;
+	var message = document.getElementById("message");
+	message.innerHTML = "";
+    try { 
+        if(x == "")  throw "值为空";
+        if(isNaN(x)) throw "不是数字";
+        x = Number(x);
+        if(x < 5)    throw "太小";
+        if(x > 10)   throw "太大";
+    }
+    catch(err) {
+        message.innerHTML = "错误: " + err;
+    }
+}
+</script>
+
+</from>
+</body>
+</html>

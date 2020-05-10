@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TestWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>com.web.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/TomcatTest/HelloServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloServletGet</servlet-name>
+    <servlet-class>com.web.HelloServletGet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServletGet</servlet-name>
+    <url-pattern>/TomcatTest/HelloServletGet</url-pattern>
+  </servlet-mapping>
+  <!-- 00000000000000000000000 -->
+  <servlet>
+    <servlet-name>UserAdd</servlet-name>
+    <servlet-class>com.web.control.UserAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAdd</servlet-name>
+    <url-pattern>/TomcatTest/UserAdd</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserDel</servlet-name>
+    <servlet-class>com.web.control.UserDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserDel</servlet-name>
+    <url-pattern>/TomcatTest/UserDel</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserUpdate</servlet-name>
+    <servlet-class>com.web.control.UserUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserUpdate</servlet-name>
+    <url-pattern>/TomcatTest/UserUpdate</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>UserSearch</servlet-name>
+    <servlet-class>com.web.control.UserSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserSearch</servlet-name>
+    <url-pattern>/TomcatTest/UserSearch</url-pattern>
+  </servlet-mapping>
+</web-app>
