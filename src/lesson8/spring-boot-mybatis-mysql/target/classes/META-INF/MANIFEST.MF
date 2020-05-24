@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: 15524
+Build-Jdk: 11.0.6
+Implementation-Title: spring-boot-mybatis-mysql
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: spring.mybatis.demo
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/spring-boot-my
+ batis-mysql/
+Created-By: Maven Integration for Eclipse
+
