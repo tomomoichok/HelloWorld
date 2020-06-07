@@ -1,0 +1,73 @@
+<p>hello world</p>
+<br>
+{{userName}}
+<br>
+{{userName2}}
+<br>
+{{userName3}}
+<br>
+<div title="{{title}}">1111</div>
+<br>
+<div [title]="title">222</div>
+<br>
+<div innerHtml="{{htmlstr}}"></div>
+<br>
+{{dataObj.name}}  -- {{dataObj.age}}  -- {{dataObj.address}} 
+<br>
+<ul>
+    <li *ngFor="let row of dataList; ">
+        {{row}} 
+    </li>
+<ul>
+
+<table border=1>
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>address</td>
+    </tr>
+    <tr *ngFor="let row of dataObjectList">
+        <td>{{row.name}}</td>
+        <td>{{row.age}}</td>
+        <td>{{row.address}}</td>
+    </tr>
+</table>
+
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+</ul>
+   <li *ngFor="let row of dataArrayList">
+       {{row.name}}
+       <ol>
+           <li *ngFor="let subrow of row.data">
+               {{subrow}}
+           </li>
+       </ol>
+   </li>
+
+</ul>
+<!--
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+<ul>
+    <li template="ngFor let item of dataArrayList; let key=index">
+        {{item}}
+    </li>
+</ul>
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+-->
+<br>
+<div *ngIf="visFlag"> *************div************* </div>
+
+<button (click)="setVis()" >表示設定</button>
+<br>
+
+<input type="text"  (keyup)="keyTest($event)"/>
+<br>
+
+ <input type="text"  [(ngModel)]="inText"/>
+ {{inText}}
+ <button (click)="setInText()" >設定</button>
+ <br>
+ 
+<!-- template keyup err  -->

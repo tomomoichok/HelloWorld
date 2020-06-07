@@ -1,0 +1,17 @@
+<input type="text" [(ngModel)]="userName" />{{userName}}
+<br>
+<button (click)="addUserName()">addUser</button><br>
+<button (click)="getUserName()">getUser</button><br>
+<button (click)="getUserInfHttpGet()">getUserInfo HTTP GET</button><br>
+<button (click)="getUserInfHttpPost()">getUserInfo HTTP POST</button><br>
+<button (click)="getUserInfJSONP()">getUserInfo JSONP</button><br>
+
+<br>
+<table border=1>
+    <tr><td>userName</td></tr>
+    <tr *ngFor="let row of userNameList">
+        <td>{{row}}</td>
+    </tr>
+</table>
+
+<br>

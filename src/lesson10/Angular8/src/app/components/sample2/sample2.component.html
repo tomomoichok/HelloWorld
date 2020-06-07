@@ -1,0 +1,6 @@
+<app-head2 [msg]="heardMessag" [addIndex]="addIndex" (outer)="runParam($event)" #headObject></app-head2>
+A画面
+<br>
+<button (click)="headObject.callChid(headObject.tmpIndex)" > call Head Method</button>
+<br>
+<button (click)="callHeadMethod()"> call head </button>

@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <td> userName </td>
+        <td><input type="text" [(ngModel)]="userName" />
+    </tr>
+    <tr>
+        <td>age</td>
+        <td><input type="text" [(ngModel)] = "userAge" />
+    </tr>
+    <tr>
+        <td>address</td>
+        <td><input type="text" [(ngModel)] = "userAddress" />
+    </tr>
+</table>
+
+<button (click)="addUserInfo()"> 追加 </button>
+<!---->
+<table border=1>
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>address</td>
+    </tr>
+    
+    <tr *ngFor="let aaa of userList">
+        <td>{{aaa.name}}</td>
+        <td>{{aaa.age}}</td>
+        <td>{{aaa.address}}</td>
+    </tr>
+</table>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yulaiz.test.demo.web.dao.TestMapper">
+    <select id="getTest" resultType="java.lang.String">
+        SELECT plan.USERNAME as name FROM user plan LIMIT 1
+    </select>
+
+	<insert id="insertUsers" parameterType="com.yulaiz.test.demo.web.po.Users">
+		insert into users(name,salary) value(#{name},#{salary})
+	</insert>
+
+	<insert id="insertClass" parameterType="com.yulaiz.test.demo.web.po.Tclazz">
+		insert into t_clazz(name) value(#{name})
+	</insert>
+
+	<delete id="delUsers" parameterType="com.yulaiz.test.demo.web.po.Users">
+		delete from users where id = #{id}
+	</delete>
+
+	<delete id="delClass" parameterType="com.yulaiz.test.demo.web.po.Tclazz">
+		delete from t_clazz  where id = #{id}
+	</delete>
+
+
+	<update id="upUsers" parameterType="com.yulaiz.test.demo.web.po.Users">
+		update  users  set name=#{name} where id = #{id}
+	</update>
+
+	<update id="upClass" parameterType="com.yulaiz.test.demo.web.po.Tclazz">
+		update  t_clazz   set name=#{name}  where id = #{id}
+	</update>
+
+</mapper>
